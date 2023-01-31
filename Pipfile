@@ -7,6 +7,7 @@ name = "pypi"
 jupyter = "*"
 lightgbm = "*"
 sklearn = "*"
+matplotlib = "*"
 
 [dev-packages]
 
