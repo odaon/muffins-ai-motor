@@ -40,9 +40,13 @@ Da skal Jupyter Lab åpnes automatisk i nettleseren din! Derifra kan du se alle 
 
 ## Oppgaven
 
-Dette er en konkurranse mellom lagene. Konkurransen har tre deler:
+Dette er en konkurranse mellom lagene. Konkurransen har tre deler for å være sikker på at selv de flinkeste skal ha noe å gjøre hele kvelden, men det er veldig bra å "bare" bli ferdig med den første!
 
-1. Hvem kan trene den maskinlæringsmodellen som gir høyest ROC-AUC på en valideringsoppgave?
-2. Hvem kan best redegjøre for de etiske problemstillingene vi møter ved å bruke de forskjellige dataene vi har, og ved å bruke maskinlæringsmodellen vår til å peke ut potensielle forsikringssvik?
-3. Hvem kan lage den beste maskinlæringsmodellen som tar tilstrekkelig høyde for de etiske problemene vi møter på?
+1. Tren en maskinlæringsmodell som gjør det så bra som mulig på data den ikke har sett før (med samme variabler som den har sett). Altså skal dere trene en modell som generaliserer!
+
+2. Redegjør for de etiske problemstillingene rundt:
+- Å bruke noen spesifikke kolonner i dataene vi har (Kan vi ende opp med å diskriminere noen på en uheldig måte? Hva annet kan skje?).
+- Å bruke en maskinlæringsmodell til å peke ut suspekte krav generelt (Tenk på hvordan modellen din sine forskjellige scoremetrikker påvirker hvor etisk den er i bruk, og hvordan den kan brukes).
+
+**BONUS:** Lag den beste maskinlæringsmodellen dere kan som tar tilstrekkelig høyde for de etiske problemene vi møter på, og utelater problematiske data. Redegjør for en etisk måte å bruke denne maskinlæringsmodellen på i prosessen for å identifisere, stoppe eller forebygge svindel.
 
