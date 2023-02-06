@@ -6,7 +6,16 @@ Dette er et case for en maskinlæringsworkshop organisert av [BRAIN NTNU](https:
 
 Vi skal se på et datasett som inneholder utbetalingskrav for rapporterte skader på forsikrede kjøretøy. Noen av disse kravene ble oppdaget at var forsøk på svindel! Vi skal lage en maskinlæringsmodell som snuser ut fremtidig muffens blant de inrapporterte kravene. Dette kalles en "binær klassifikasjonsoppgave", fordi maskinlæringsmodellen sin jobb er å dele inn alle kravene i to klasser, nemlig "misstenkt svindel" og "ikke misstenkt svindel". Dette kan en maskinlæringsmodell greie ved å lære seg hvilke datamessige fellestrekk identifiserte svindelsaker har hatt i fortiden. Men pass på, ikke all data er bra data, og noen ganger har valgene dine som maskinlæringsingeniør etiske konsekvenser for dem som blir påvirket av systemet: Greier du å identifisere og forutse forskjellige etiske konsekvenser av hvilke data du bruker, og hvordan du optimerer modellen din? Greier du å unngå diskriminering på beskyttede kategorier i [likestillings og diskrimineringslovens paragraf 6](https://lovdata.no/dokument/NL/lov/2017-06-16-51)? Hvilke konsekvenser vil de ha å stole på en unøyaktig modell, og hvordan bør man i forskjellige tilfeller bruke den for å unngå negative konsekvenser?
 
-Dataene våre har en salig kombinasjon av kategoriske data (som bilmerke) og kontinuerlig distribuerte data (som prisen på forsikringsobjektet), og noen av kravene mangler også noe av dataen. Det er din jobb som maskinlæringsingeniør å velge og massere dataene. Hva er bra og dårlig data? Hvilke kolonner skal du bruke, og hvordan skal de representeres eller kombineres når du sender dem inn i modellen din? Da lønner det seg å skjønne litt om hva slags maskinlæringsmodeller som fungerer for  forskjellig data, og hvordan kan du eventuelt kan trikse med data for å få den til å fungere bedre med en gitt modelltype.
+Dataene våre har en salig kombinasjon av kategoriske data (som bilmerke) og kontinuerlig distribuerte data (som prisen på forsikringsobjektet), og noen av kravene (radene i datasettet representerer erstatningskrav fra erstatningstager til forsikringsselskapet) mangler også noe av dataen. Det er din jobb som maskinlæringsingeniør å velge og massere dataene. Hva er bra og dårlig data? Hvilke kolonner skal du bruke, og hvordan skal de representeres eller kombineres når du sender dem inn i modellen din? Da lønner det seg å skjønne litt om hva slags maskinlæringsmodeller som fungerer for forskjellig data, og hvordan kan du eventuelt kan trikse med data for å få den til å fungere bedre med en gitt modelltype.
+
+### Notebookene
+
+Vi har skrevet to Jupyter Notebooks som dere kan bruke som utgangspunkt for å løse oppgavene (oppgavene er beskrevet lengre nede).
+
+`data_investigation.ipynb` inneholder delvis kode for å utforske og vaske dataene.
+`maskinlæring.ipynb` inneholder delvis kode for å trene en logistisk regressor, og utforske resultatene som modellen gir.
+
+Den logistiske regresjonen i `maskinlæring.ipynb`-notebooken krever data som er tilstrekkelig preprosessert, altså at kategoriske variabler er encodet som tall. Dere må da kjøre gjennom data_investigation-notebooken for å produsere denne dataen, og sørge for at maskinlæring-notebooken leser den riktige filen.
 
 ## Praktisk 🛠️
 
