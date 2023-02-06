@@ -4,7 +4,7 @@ Dette er et case for en maskinlæringsworkshop organisert av [BRAIN NTNU](https:
 
 ## Introduksjon
 
-Vi skal se på et datasett som inneholder utbetalingskrav for rapporterte skader på forsikrede kjøretøy. Noen av disse kravene ble oppdaget at var forsøk på svindel! Vi skal lage en maskinlæringsmodell som snuser ut fremtidig muffins blant de inrapporterte kravene, og markerer de som har ugler i mosen. Dette kalles en "binær klassifikasjonsoppgave", fordi maskinlæringsmodellen sin jobb er å dele inn alle kravene i to klasser, nemlig "misstenkt svindel" og "ikke misstenkt svindel". Dette kan en maskinlæringsmodell greie ved å lære seg hvilke datamessige fellestrekk identifiserte svindelsaker har hatt i fortiden. Men pass på, ikke all data er bra data, og noen ganger har valgene dine som maskinlæringsingeniør etiske konsekvenser for dem som blir påvirket av systemet: Greier du å identifisere og forutse forskjellige etiske konsekvenser av hvilke data du bruker, og hvordan du optimerer modellen din? Hvilke konsekvenser vil de ha å stole på en unøyaktig modell, og hvordan bør man i forskjellige tilfeller bruke den for å unngå negative konsekvenser?
+Vi skal se på et datasett som inneholder utbetalingskrav for rapporterte skader på forsikrede kjøretøy. Noen av disse kravene ble oppdaget at var forsøk på svindel! Vi skal lage en maskinlæringsmodell som snuser ut fremtidig muffens blant de inrapporterte kravene. Dette kalles en "binær klassifikasjonsoppgave", fordi maskinlæringsmodellen sin jobb er å dele inn alle kravene i to klasser, nemlig "misstenkt svindel" og "ikke misstenkt svindel". Dette kan en maskinlæringsmodell greie ved å lære seg hvilke datamessige fellestrekk identifiserte svindelsaker har hatt i fortiden. Men pass på, ikke all data er bra data, og noen ganger har valgene dine som maskinlæringsingeniør etiske konsekvenser for dem som blir påvirket av systemet: Greier du å identifisere og forutse forskjellige etiske konsekvenser av hvilke data du bruker, og hvordan du optimerer modellen din? Greier du å unngå diskriminering på beskyttede kategorier i [likestillings og diskrimineringslovens paragraf 6](https://lovdata.no/dokument/NL/lov/2017-06-16-51)? Hvilke konsekvenser vil de ha å stole på en unøyaktig modell, og hvordan bør man i forskjellige tilfeller bruke den for å unngå negative konsekvenser?
 
 Dataene våre har en salig kombinasjon av kategoriske data (som bilmerke) og kontinuerlig distribuerte data (som prisen på forsikringsobjektet), og noen av kravene mangler også noe av dataen. Det er din jobb som maskinlæringsingeniør å velge og massere dataene. Hva er bra og dårlig data? Hvilke kolonner skal du bruke, og hvordan skal de representeres eller kombineres når du sender dem inn i modellen din? Da lønner det seg å skjønne litt om hva slags maskinlæringsmodeller som fungerer for  forskjellig data, og hvordan kan du eventuelt kan trikse med data for å få den til å fungere bedre med en gitt modelltype.
 
@@ -40,13 +40,55 @@ Da skal Jupyter Lab åpnes automatisk i nettleseren din! Derifra kan du se alle 
 
 ## Oppgaven
 
-Dette er en konkurranse mellom lagene. Konkurransen har tre deler for å være sikker på at selv de flinkeste skal ha noe å gjøre hele kvelden, men det er veldig bra å "bare" bli ferdig med den første!
+Dette er en konkurranse mellom lagene. Konkurransen har tre deler for å være sikker på at selv de flinkeste skal ha noe å gjøre hele kvelden, men det er veldig bra å "bare" gjøre et ærlig forsøk på noen av oppgavene!
 
-1. Tren en maskinlæringsmodell som gjør det så bra som mulig på data den ikke har sett før (med samme variabler som den har sett). Altså skal dere trene en modell som generaliserer!
+1. Preprosesser data slik at dere får trent en logistisk regresjonsmodell med så høy som mulig sammenlagt `ROC-AUC + Average Precission` som mulig.
 
-2. Redegjør for de etiske problemstillingene rundt:
+2. Tren en maskinlæringsmodell med så høy som mulig sammenlagt `ROC-AUC + Average Precission` som mulig. Dere står frie til å lage hva som helst slags modell, men får tips om at LightGBM er et godt alternativ.
+
+> NB: På oppgave 1 og 2 vil dere bli målt på et testsett i samme format som dataen dere har fått, men som dere ikke har tilgang til når dere tuner modellen og skriver preprosesseringskoden.
+
+3. Redegjør for de etiske problemstillingene rundt:
 - Å bruke noen spesifikke kolonner i dataene vi har (Kan vi ende opp med å diskriminere noen på en uheldig måte? Hva annet kan skje?).
 - Å bruke en maskinlæringsmodell til å peke ut suspekte krav generelt (Tenk på hvordan modellen din sine forskjellige scoremetrikker påvirker hvor etisk den er i bruk, og hvordan den kan brukes).
 
 **BONUS:** Lag den beste maskinlæringsmodellen dere kan som tar tilstrekkelig høyde for de etiske problemene vi møter på, og utelater problematiske data. Redegjør for en etisk måte å bruke denne maskinlæringsmodellen på i prosessen for å identifisere, stoppe eller forebygge svindel.
 
+## Likestillings- og diskrimineringsloven
+
+Et minstekrav for etisk praksis er å følge likestillings- og diskrimineringsloven. Her er et relevant utdrag:
+>
+>**§ 6. Forbud mot å diskriminere**
+>
+>Diskriminering på grunn av kjønn, graviditet, permisjon ved fødsel eller adopsjon, omsorgsoppgaver, etnisitet, religion, livssyn, funksjonsnedsettelse, seksuell orientering, kjønnsidentitet, kjønnsuttrykk, alder eller kombinasjoner av disse grunnlagene er forbudt. Med etnisitet menes blant annet nasjonal opprinnelse, avstamning, hudfarge og språk.
+>
+>Forbudet omfatter diskriminering på grunn av eksisterende, antatte, tidligere eller fremtidige forhold som nevnt i første ledd.
+>
+>Forbudet gjelder også hvis en person blir diskriminert på grunn av sin tilknytning til en annen person, og diskrimineringen skjer på grunn av forhold som nevnt i første ledd.
+>
+>Med diskriminering menes direkte eller indirekte forskjellsbehandling etter §§ 7 og 8 som ikke er lovlig etter §§ 9, 10 eller 11.
+>
+>
+>**§ 7. Direkte forskjellsbehandling**
+>
+>Med direkte forskjellsbehandling menes at en person behandles dårligere enn andre blir, har blitt eller ville blitt behandlet i en tilsvarende situasjon, på grunn av forhold som nevnt i § 6 første ledd.
+>
+>
+>**§ 8. Indirekte forskjellsbehandling**
+>
+>Med indirekte forskjellsbehandling menes enhver tilsynelatende nøytral bestemmelse, betingelse, praksis, handling eller unnlatelse som vil stille personer dårligere enn andre, på grunn av forhold som nevnt i § 6 første ledd.
+>
+>
+>**§ 9. Lovlig forskjellsbehandling**
+>
+>Forskjellsbehandling er ikke i strid med forbudet i § 6 når den
+> 
+>a.	har et saklig formål
+> 
+>b.	er nødvendig for å oppnå formålet og
+> 
+>c.	ikke er uforholdsmessig inngripende overfor den eller de som forskjellsbehandles.
+>
+>I arbeidsforhold og ved valg og behandling av selvstendig næringsdrivende og innleide arbeidstakere er direkte forskjellsbehandling på grunn av kjønn, etnisitet, religion, livssyn, funksjonsnedsettelse, seksuell orientering, kjønnsidentitet og kjønnsuttrykk bare tillatt hvis denne egenskapen har avgjørende betydning for utøvelsen av arbeidet eller yrket, og vilkårene i første ledd er oppfylt.
+>
+>Aldersgrenser som følger av lov eller forskrift, og fordelaktige priser på grunn av alder, er ikke i strid med forbudet i § 6.
