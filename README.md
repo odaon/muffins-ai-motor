@@ -1,4 +1,4 @@
-# muffins-ai-motor 🧁🤖⛐💥
+# muffins-ai-motor 🧁🤖🚗💥
 
 Dette er et case for en maskinlæringsworkshop organisert av [BRAIN NTNU](https://brainntnu.no/) og [Fremtind Forsikring](https://www.linkedin.com/company/fremtind), den 1. mars 2023. Det er antatt at deltagerene har grunnleggende Python-kunskaper, og har installert [Python](https://www.python.org/downloads/) 3.10 på datamaskinen sin.
 
