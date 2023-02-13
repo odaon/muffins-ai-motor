@@ -19,6 +19,8 @@ Den logistiske regresjonen i `maskinlæring.ipynb`-notebooken krever data som er
 
 ## Praktisk 🛠️
 
+ Installer Anacoda (eller miniconda) til ditt operativsystem [her](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) 
+
 Dette prosjektet er et git-repository som er hostet hos GitHub. Det betyr at prosjektet med alt innhold er versjonskontrollert med verktøyet "git" og er tilgjengelig online, som gjør det lett for flere mennesker å samarbeide, oppdatere prosjektet, og hente prosjektet fra nettet.
 
 Dette repositoriet inneholder nesten alt du trenger for å løse oppgaven på en grei måte. En forutsetning for å gjennomføre caset er at du har [Python](https://www.python.org/) (v3.10 er anbefalt) installert på datamaskinen din, og kan litt Python-programmering.
@@ -29,23 +31,32 @@ Hvis du har git installert kan du gå åpne kommandolinjen i folderen du ønsker
 
 `git clone https://github.com/odaon/muffins-ai-motor.git`
 
-Når du har prosjektfolderen på maskinen din kan du åpne kommandolinjen og kjøre
+gå inn i repository mappen:
+`cd muffins-ai-motor`
 
-`python -m pip install pipenv`
+Når du har installert det, åpne en ny terminal og kjør følgende kommandoer i gitt rekkefølge:  
 
-Dette installerer python-pakken `pipenv`, som kan lage et ferskt virtuelt python-miljø for prosjektet hvor du kan installere pakker og gjøre endringer uten å påvirke den sentrale Python-installasjonen din.
+`conda create -n muffins-ai python=3.10`
 
-I prosjektfolderen (det er viktig at du er i prosjektfolderen!) må du så kjøre denne kommandoen i terminalen:
+`conda activate muffins-ai`
 
-`python -m pipenv install`
+`pip install -r requirements.txt`
 
-Dette installerer alle de riktige pakkene du trenger i et nytt virtuelt python-miljø for dette prosjektet, basert på en oppskrift som finnes i filene `Pipfile` og `Pipfile.lock`.
+`jupyter lab`
 
-Så kan du kjøre følgende kommando, for å åpne Jupyter Lab i det virtuelle miljøet du nettop installerte:
+Da skal du se noe som likner på dette i terminalen:
+```console
+[C 2023-02-13 10:49:10.328 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/markuhei/.local/share/jupyter/runtime/jpserver-20845-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=ba0ff325d0687d8ac7fc8846c0f5832f11464f924d368388
+     or http://127.0.0.1:8888/lab?token=ba0ff325d0687d8ac7fc8846c0f5832f11464f924d368388
 
-`pipenv run jupyter lab`
+```
 
-Da skal Jupyter Lab åpnes automatisk i nettleseren din! Derifra kan du se alle prosjektfilene på venstre side. Det er bare å åpne de forskjellige Notebooksene, som vil guide deg videre steg for steg i prosessen med å løse caset.
+åpne linken i nettleseren, så er du i gang.  
 
 ## Oppgaven
 
