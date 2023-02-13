@@ -7,3 +7,5 @@ jupyterlab
 shap
 seaborn
 numpy
+pyarrow
+fastparquet
