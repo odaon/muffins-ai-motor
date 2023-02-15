@@ -29,6 +29,7 @@ For å laste ned dette git-repositoriet til maskinen din kan du enten bruke kild
 
 Hvis du har git installert kan du gå åpne terminalen din fra mappen du ønsker å lagre prosjektmappen i og kjøre denne kommandoen for å kopiere hele prosjektet til maskinen din:
 
+
 ```
 git clone https://github.com/odaon/muffins-ai-motor.git
 ```
@@ -45,6 +46,12 @@ conda create -n muffins-ai python=3.10
 ```
 conda activate muffins-ai
 ```
+
+### NB! Dersom du har m1 eller m2 chip på macen din, må du kjøre følgende kommando før neste steg:
+```
+brew install cmake libomp
+```
+
 ```
 pip install -r requirements.txt
 ```
