@@ -49,7 +49,7 @@ conda activate muffins-ai
 
 #### NB! Dersom du har m1 eller m2 chip på macen din, må du kjøre følgende kommando før neste steg:
 
-'brew install cmake libomp'
+`brew install cmake libomp`
 
 ```
 pip install -r requirements.txt
