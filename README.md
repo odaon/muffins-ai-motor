@@ -1,14 +1,14 @@
-# muffins-ai-motor 🧁🤖🚗💥
+# Muffins AI Motor 🧁🤖🚗💥
 
-Dette er et case for en maskinlæringsworkshop organisert av [BRAIN NTNU](https://brainntnu.no/) og [Fremtind Forsikring](https://www.linkedin.com/company/fremtind), den 1. mars 2023. Det er antatt at deltagerene har grunnleggende Python-kunskaper, og har installert [Python](https://www.python.org/downloads/) 3.10 på datamaskinen sin.
+Dette er et case for en maskinlæringsworkshop organisert av [BRAIN NTNU](https://brainntnu.no/) og [Fremtind Forsikring](https://www.linkedin.com/company/fremtind), den 1. mars 2023. Det er antatt at deltagerene har grunnleggende Python-kunskaper, har installert anaconda eller miniconda og installert [Python](https://www.python.org/downloads/) 3.10 på datamaskinen sin.
 
 ## 🤔 Introduksjon
 
 Dette prosjektet er et git-repository som er hostet hos GitHub. Det betyr at prosjektet med alt innhold er versjonskontrollert med verktøyet "git" og er tilgjengelig online, som gjør det enklere for flere mennesker å samarbeide, oppdatere, og hente prosjektet fra nettet. Prosjektet inneholder nesten alt du trenger for å løse oppgaven på en grei måte.
 
-Vi skal se på et datasett som inneholder utbetalingskrav for rapporterte skader på forsikrede kjøretøy. Noen av disse kravene ble oppdaget at var forsøk på svindel! Vi skal lage en maskinlæringsmodell som snuser ut fremtidig muffens blant de inrapporterte kravene. Dette kalles en "binær klassifikasjonsoppgave", fordi maskinlæringsmodellen sin jobb er å dele inn alle kravene i to klasser, "mistenkt svindel" og "ikke mistenkt svindel". Dette kan en maskinlæringsmodell greie ved å lære seg, ved å se på hvilke datamessige fellestrekk identifiserte svindelsaker har hatt i fortiden. Men pass på, ikke all data er bra data, og noen ganger har valgene dine som maskinlæringsingeniør etiske konsekvenser for dem som blir påvirket av systemet: Greier du å identifisere og forutse forskjellige etiske konsekvenser av hvilke data du bruker, og hvordan du optimerer modellen din? Greier du å unngå diskriminering på beskyttede kategorier i [likestillings og diskrimineringslovens paragraf 6](https://lovdata.no/dokument/NL/lov/2017-06-16-51)? Hvilke konsekvenser vil det ha å stole på en unøyaktig modell, og hvordan bør man i forskjellige tilfeller bruke den for å unngå negative konsekvenser?
+Vi skal se på et datasett som inneholder utbetalingskrav for rapporterte skader på forsikrede kjøretøy. Det ble oppdaget at noen av disse kravene var forsøk på svindel! Vi skal lage en maskinlæringsmodell som snuser ut fremtidig muffens blant de inrapporterte kravene. Dette kalles en "binær klassifikasjonsoppgave", fordi maskinlæringsmodellen sin jobb er å dele inn kravene i to klasser, "mistenkt svindel" og "ikke mistenkt svindel". Dette kan en maskinlæringsmodell forsøke å lære seg, ved å se på hvilke fellestrekk identifiserte svindelsaker har hatt i fortiden. Men pass på, ikke all data er bra data, og noen ganger har valgene dine som maskinlæringsingeniør etiske konsekvenser for dem som blir påvirket av systemet: Greier du å identifisere og forutse ulike etiske konsekvenser basert på hvilke data du bruker, og hvordan du optimerer modellen din? Greier du å unngå diskriminering på beskyttede kategorier i [likestillings og diskrimineringslovens paragraf 6](https://lovdata.no/dokument/NL/lov/2017-06-16-51)? Hvilke konsekvenser vil det ha å stole på en unøyaktig modell, og hvordan bør man i forskjellige tilfeller bruke den for å unngå negative konsekvenser?
 
-Dataene våre har en salig kombinasjon av kategoriske data (som bilmerke) og kontinuerlig distribuerte data (som prisen på forsikringsobjektet), og noen av kravene (radene i datasettet representerer erstatningskrav fra erstatningstager til forsikringsselskapet) mangler også noe av dataen. Det er din jobb som maskinlæringsingeniør å velge hvordan du masserer dataene. Hva er bra og dårlig data? Hvilke kolonner skal du bruke, og hvordan skal de representeres eller kombineres når du sender dem inn i modellen din? Da lønner det seg å skjønne litt om hva slags maskinlæringsmodeller som fungerer for forskjellig data, og hvordan kan du eventuelt kan trikse med data for å få den til å fungere bedre med en gitt modelltype.
+Radene i datasettet representerer erstatningskrav fra erstatningstager til forsikringsselskapet. Dataene vi bruker er en salig kombinasjon av kategoriske data (som bilmerke) og kontinuerlig distribuerte data (som prisen på forsikringsobjektet), og noen av kravene mangler også noe data. Det er din jobb som maskinlæringsingeniør å velge hvordan du masserer dataene. Hva er bra og dårlig data? Hvilke kolonner skal du bruke, og hvordan skal de representeres eller kombineres når du sender dem inn i modellen din? Da lønner det seg å ha kunnskap om hvilke maskinlæringsmodeller som fungerer for forskjellig data, og hvordan kan du eventuelt kan prosessere dataene for å få de til å fungere bedre med en gitt modelltype.
 
 ### 📓 Notebooks
 
@@ -47,9 +47,11 @@ conda create -n muffins-ai python=3.10
 conda activate muffins-ai
 ```
 
-#### NB! Dersom du har m1 eller m2 chip på macen din, må du kjøre følgende kommando før neste steg:
+
+##### NB! Dersom du har m1 eller m2 chip på macen din, må du kjøre følgende kommando før neste steg:
 
 `brew install cmake libomp`
+
 
 ```
 pip install -r requirements.txt
