@@ -21,7 +21,11 @@ Den logistiske regresjonen i `maskinlæring.ipynb`-notebooken krever data som er
 
 ## 🛠️ Praktisk 
 
-Installer Anacoda (eller miniconda) som fungerer med ditt operativsystem [her](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) 
+Installer Anacoda (eller miniconda) som fungerer med ditt operativsystem [her](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)  
+
+Hvis du har mac med M1 eller M2 chip, må du også ha `homebrew` installert. 
+(Du kan sjekke om du har `homebrew` installert ved å kjøre `brew` i terminalen.)  
+
 
 En forutsetning for å gjennomføre caset er at du har [Python](https://www.python.org/) (v3.10 er anbefalt) installert på datamaskinen din, og har grunnleggende Python-kunskaper.
 
@@ -51,8 +55,7 @@ conda activate muffins-ai
 
 ##### NB! Dersom du har m1 eller m2 chip på macen din, må du kjøre følgende kommando før neste steg:
 
-`brew install cmake libomp`
-
+`brew install cmake libomp`  
 
 ```
 pip install -r requirements.txt
