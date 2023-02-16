@@ -41,8 +41,9 @@ cd muffins-ai-motor
 
 Kjør følgende kommandoer i gitt rekkefølge:  
 ```
-conda create -n muffins-ai python=3.10
+conda create -y -n muffins-ai python=3.10
 ```
+
 ```
 conda activate muffins-ai
 ```
