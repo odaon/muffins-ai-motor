@@ -77,21 +77,29 @@ Hvis ikke Jupyter Lab åpner seg i nettleseren automatisk skal du se noe som lik
 
 Åpne lenken i nettleseren, så er du i gang.
 
-## 📝 Oppgaven
+## 📝 Oppgavene
 
-Dette er en konkurranse hvor vi deler dere inn i lag. Konkurransen har tre deler for å være sikker på at selv de flinkeste skal ha noe å gjøre hele kvelden, men det er veldig bra å "bare" gjøre et ærlig forsøk på noen av oppgavene!
+Konkurransen har tre oppgaver og en bonusoppgave, for å være sikker på at selv de mest erfarne skal ha noe å gjøre hele kvelden. Dere kan være fornøyd med å gjøre et ærlig forsøk på en eller to av oppgavene dersom dere har lite eller ingen erfaring med maskinlæring fra før! Oppgavene er som følger:
 
-1. Preprosesser data slik at dere får trent en logistisk regresjonsmodell med så høy som mulig sammenlagt `ROC-AUC + Average Precission`.
+1. Preprosesser data, og tren en logistisk regresjonsmodell med så høy som mulig sammenlagt `ROC-AUC + Average Precission` (dette er metrikker som vil bli forklart senere i koden). 
+   - Dette vil innebære å encode dataen på riktig vis, altså som gyldige og meningsfulle tallverdier istedenfor tekst.
 
 2. Tren en hvilken som helst slags maskinlæringsmodell med så høy som mulig sammenlagt `ROC-AUC + Average Precission`. Dere står frie til å gjøre egne valg, men får tips om at LightGBM er et godt alternativ for denne typen data.
 
 > NB: På oppgave 1 og 2 vil dere bli målt på et testsett i samme format som dataen dere har fått, men som dere ikke har tilgang til når dere tuner modellen og skriver preprosesseringskoden.
 
-3. Redegjør for:
-- Hvilke kolonner eller kombinasjoner av kolonner som kan være etisk uheldige å bruke, og hvorfor.
-- De etiske implikasjonene av å bruke en maskinlæringsmodell til å peke ut suspekte krav og bruke det i en prosess (Tenk på hvordan modellen din sine forskjellige scoremetrikker påvirker hvor etisk den er i bruk, og hvordan den etisk kan brukes i en prosess).
+3. Dette er etikkoppgaven, og den er todelt. Pekepin for hva dere bør tenke på finnes under overskriften "Etikk, likestilling, og diskriminering" lengre nede.
+   
+   - 3.a) Hvis vi ignorerer loven og etikken er det mange alternative konsekvenser som vi kan velge at skal utløses dersom en sak blir markert som muffens av en maskinlæringsmodell. Hva er de forskjellige etiske problemene og konsekvensene ved hver av de følgende scenarioene hvor muffensprediksjonen utløser en praktisk konsekvens?
+     - 3.a.i) Når en sak klassifiseres som muffens må kunden fylle inn flere skjemaer med informasjon før saken går videre.
+     - 3.a.ii) Når en sak klassifiseres som muffens sendes den til en manuell saksbehandler, som ikke vet at det er markert som muffens. 
+     - 3.a.iii) Når en sak klassifiseres som muffens blir den markert som *mulig* svindel internt, og blir etterforsket i det stille uten at kunden må fylle inn ekstra skjemaer eller gå gjennom manuell saksbehandling. 
+     - 3.a.iv) Når en sak klassifiseres som muffens blir utbetaling automatisk stoppet, og saken blir sendt til utredning som svindel. 
+     - 3.a.v) Når en sak klassifiseres som muffens blir saken automatisk markert som definitivt svindel, og blir behandlet deretter.
+   
+   - 3.b) Hvilke kolonner - eller kombinasjoner av kolonner - kan være etisk uheldige å bruke i en maskinlæringsmodell for muffensdeteksjon? Hvorfor?
 
-**BONUS:** Lag den beste maskinlæringsmodellen dere kan som tar tilstrekkelig høyde for de etiske problemene vi møter på, og utelater problematiske data. Redegjør for en etisk måte å bruke denne maskinlæringsmodellen på i prosessen for å identifisere, stoppe eller forebygge svindel.
+   - **BONUSOPPGAVE:** Lag den beste maskinlæringsmodellen dere kan som tar tilstrekkelig høyde for de etiske problemene vi møter på, og utelater problematiske data. Redegjør for en etisk måte å bruke denne maskinlæringsmodellen på i prosessen for å identifisere, stoppe eller forebygge svindel.
 
 ## 🧑‍⚖️ Etikk, likestilling, og diskriminering
 
@@ -109,7 +117,7 @@ avansert analyse kan føre til at enkelte kunder, eller kundegrupper, i praksis 
 > Problemstillingen er spesielt relevant for produkter med høy samfunnsnytte,
 eller som kan påvirke sårbare kundegrupper særskilt.
 
-**Likestillings- og diskrimineringsloven** er den mest grunnleggende formaliseringen av etisk praksis rund forskjelsbehandling av kunder i Norge. Her er et relevant utdrag:
+**Likestillings- og diskrimineringsloven** er den mest grunnleggende formaliseringen av etisk praksis rund forskjelsbehandling i Norge. Her er et relevant utdrag:
 >
 >**§ 6. Forbud mot å diskriminere**
 >
