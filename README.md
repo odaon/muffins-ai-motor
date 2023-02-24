@@ -81,10 +81,10 @@ Hvis ikke Jupyter Lab åpner seg i nettleseren automatisk skal du se noe som lik
 
 Konkurransen har tre oppgaver og en bonusoppgave, for å være sikker på at selv de mest erfarne skal ha noe å gjøre hele kvelden. Dere kan være fornøyd med å gjøre et ærlig forsøk på en eller to av oppgavene dersom dere har lite eller ingen erfaring med maskinlæring fra før! Oppgavene er som følger:
 
-1. Preprosesser data, og tren en logistisk regresjonsmodell med så høy som mulig sammenlagt `ROC-AUC + Average Precission` (dette er metrikker som vil bli forklart senere i koden). 
+1. Preprosesser data, og tren en logistisk regresjonsmodell med så høy som mulig sammenlagt `ROC-AUC` (dette er metrikker som vil bli forklart senere i koden). 
    - Dette vil innebære å encode dataen på riktig vis, altså som gyldige og meningsfulle tallverdier istedenfor tekst.
 
-2. Tren en hvilken som helst slags maskinlæringsmodell med så høy som mulig sammenlagt `ROC-AUC + Average Precission`. Dere står frie til å gjøre egne valg, men får tips om at LightGBM er et godt alternativ for denne typen data.
+2. Tren en hvilken som helst slags maskinlæringsmodell med så høy som mulig sammenlagt `ROC-AUC`. Dere står frie til å gjøre egne valg, men får tips om at LightGBM er et godt alternativ for denne typen data.
 
 > NB: På oppgave 1 og 2 vil dere bli målt på et testsett i samme format som dataen dere har fått, men som dere ikke har tilgang til når dere tuner modellen og skriver preprosesseringskoden.
 
