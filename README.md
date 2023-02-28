@@ -86,10 +86,12 @@ Konkurransen har tre oppgaver og en bonusoppgave, for å være sikker på at sel
 Oppgavene er som følger:
 
 1. Preprosesser data, og tren en logistisk regresjonsmodell med så høy som mulig `ROC-AUC` (dette er en score som vil bli forklart senere i notebooken). 
-   - Dette vil innebære å encode dataen på riktig vis, altså som gyldige og meningsfulle tallverdier istedenfor tekst. Encoding gjøres i notebooken `dataprosessering-ipynb`. Eksempelkoden for logistisk regresjon finnes i notebooken `maskinlæring.ipynb`.  Lever prediksjonsresultatene fra den logistiske regresjonsmodellen på testsettet dere har fått utdelt.
+   - Dette vil innebære å encode dataen på riktig vis, altså som gyldige og meningsfulle tallverdier istedenfor tekst. Encoding gjøres i notebooken `dataprosessering-ipynb`. Eksempelkoden for logistisk regresjon finnes i notebooken `maskinlæring.ipynb`.  Lever prediksjonsresultatene fra den logistiske regresjonsmodellen på testsettet dere har fått utdelt.  
+
+   - Scoreboard link: https://huggingface.co/spaces/marksverdhei/muffins-motor-preprocessing-scoreboard
 
 2. Tren en hvilken som helst slags maskinlæringsmodell med så høy som mulig `ROC-AUC`. Dere står frie til å gjøre egne valg, men får tips om at LightGBM er et godt alternativ for denne typen data. Lever prediksjonsresultatene fra testsettet.
-
+   - Scoreboard link: https://huggingface.co/spaces/marksverdhei/muffins-motor-scoreboard
 > NB: Korrekt måling av ROC-AUC fordrer at dere leverer inn prediksjonsresultater i form av flyttall mellom 0 og 1, og IKKE binære klassifikasjoner i form av heltall som enten er 0 eller 1.
 
 3. Dette er etikkoppgaven, og den er flerdelt. Pekepin for hva dere bør tenke på finnes under overskriften "Etikk, likestilling, og diskriminering" lengre nede.
@@ -104,6 +106,8 @@ Oppgavene er som følger:
    
    - **3.b)** Hvilke kolonner - eller kombinasjoner av kolonner - kan være etisk uheldige å bruke i en maskinlæringsmodell for muffensdeteksjon? Hvorfor?
    - **INNLEVERING:** Lag et google doc hvor dere skriver inn besvarelsen deres, tydelig markert med gruppenavn og deloppgavenummerering. Innlevering må skje en halvtime før fristen for innlevering av maskinlæringsoppgavene, fordi det tar lengre tid å rette og bestemme vinner.
+
+   - (Valgfri) scoreboard link: https://huggingface.co/spaces/marksverdhei/muffins-motor-ethics
 
 **BONUSOPPGAVE:** Lag den beste maskinlæringsmodellen dere kan som tar tilstrekkelig høyde for de etiske problemene dere finner, og utelater problematiske data. Redegjør for en etisk måte å bruke denne maskinlæringsmodellen på i prosessen for å identifisere, stoppe eller forebygge svindel. (Denne oppgaven teller ikke mot scoren, men er ment som en måte å bruke tiden på for racere og store grupper som føler seg ferdig med de andre oppgavene)
 
