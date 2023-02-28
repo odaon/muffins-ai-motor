@@ -44,7 +44,7 @@ Naviger til repository mappen:
 cd muffins-ai-motor
 ```
 
-Kjør følgende kommandoer i gitt rekkefølge:  
+Kjør følgende kommandoer i gitt rekkefølge (NB: Etter du har installert Conda må du restarte terminalen før du kan bruke Conda):  
 ```
 conda create -y -n muffins-ai python=3.10
 ```
@@ -85,12 +85,12 @@ Konkurransen har tre oppgaver og en bonusoppgave, for å være sikker på at sel
 
 Oppgavene er som følger:
 
-1. Preprosesser data, og tren en logistisk regresjonsmodell med så høy som mulig `ROC-AUC` (dette er en score som vil bli forklart senere i notebooken). 
-   - Dette vil innebære å encode dataen på riktig vis, altså som gyldige og meningsfulle tallverdier istedenfor tekst. Encoding gjøres i notebooken `dataprosessering-ipynb`. Eksempelkoden for logistisk regresjon finnes i notebooken `maskinlæring.ipynb`.  Lever prediksjonsresultatene fra den logistiske regresjonsmodellen på testsettet dere har fått utdelt.  
+1. Preprosesser data på en slik måte at en default logistisk regresjonsmodell fra Sklearn får så høy som mulig `ROC-AUC`-score (dette er en score som vil bli forklart senere i notebooken). 
+   - Dette vil innebære å encode dataen på riktig vis, altså at dataen representeres som gyldige og meningsfulle tallverdier istedenfor tekst. Encoding gjøres i notebooken `dataprosessering.ipynb`. Eksempelkode for logistisk regresjon som kan brukes til testing før innlevering finnes i notebooken `maskinlæring.ipynb`.  Lever prediksjonsresultatene fra den logistiske regresjonsmodellen på testsettet dere har fått utdelt.
 
    - Scoreboard link: https://huggingface.co/spaces/marksverdhei/muffins-motor-preprocessing-scoreboard
 
-2. Tren en hvilken som helst slags maskinlæringsmodell med så høy som mulig `ROC-AUC`. Dere står frie til å gjøre egne valg, men får tips om at LightGBM er et godt alternativ for denne typen data. Lever prediksjonsresultatene fra testsettet.
+2. Tren en hvilken som helst slags maskinlæringsmodell med så høy som mulig `ROC-AUC`-score. Dere står frie til å gjøre egne valg, men får tips om at LightGBM er et godt alternativ for denne typen data. Lever prediksjonsresultatene fra testsettet.
    - Scoreboard link: https://huggingface.co/spaces/marksverdhei/muffins-motor-scoreboard
 > NB: Korrekt måling av ROC-AUC fordrer at dere leverer inn prediksjonsresultater i form av flyttall mellom 0 og 1, og IKKE binære klassifikasjoner i form av heltall som enten er 0 eller 1.
 
