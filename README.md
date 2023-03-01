@@ -107,9 +107,9 @@ Oppgavene er som følger:
      - **3.a.v)** Når en sak klassifiseres som muffens må kunden fylle inn flere skjemaer med informasjon før saken går videre.
    
    - **3.b)** Hvilke kolonner - eller kombinasjoner av kolonner - kan være etisk uheldige å bruke i en maskinlæringsmodell for muffensdeteksjon? Hvorfor?
-   - **INNLEVERING:** Lag et google doc hvor dere skriver inn besvarelsen deres, tydelig markert med gruppenavn og deloppgavenummerering. Innlevering må skje en halvtime før fristen for innlevering av maskinlæringsoppgavene, fordi det tar lengre tid å rette og bestemme vinner.
+   - **Oppg. 3 INNLEVERING:** Google form for inlevering: https://forms.gle/ZBrDwGeuTtCuf81g9. Innlevering må skje før 20:00, altså en halvtime før fristen for innlevering av maskinlæringsoppgavene, fordi det tar lengre tid å rette.
 
-   - (Valgfri) scoreboard link: https://huggingface.co/spaces/marksverdhei/muffins-motor-ethics
+   - (Valgfri) oppg. 3 scoreboard link for å sammenligne testlikhet med vår "fasit": https://huggingface.co/spaces/marksverdhei/muffins-motor-ethics
 
 **BONUSOPPGAVE:** Lag den beste maskinlæringsmodellen dere kan som tar tilstrekkelig høyde for de etiske problemene dere finner, og utelater problematiske data. Redegjør for en etisk måte å bruke denne maskinlæringsmodellen på i prosessen for å identifisere, stoppe eller forebygge svindel. (Denne oppgaven teller ikke mot scoren, men er ment som en måte å bruke tiden på for racere og store grupper som føler seg ferdig med de andre oppgavene)
 
