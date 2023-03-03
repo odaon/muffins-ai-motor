@@ -2,7 +2,7 @@
 
 Dette er et case for en maskinlæringsworkshop organisert av [BRAIN NTNU](https://brainntnu.no/) og [Fremtind Forsikring](https://www.linkedin.com/company/fremtind), den 1. mars 2023. Det er antatt at deltagerene har grunnleggende Python-kunskaper, og har installert [Anaconda](https://www.anaconda.com/products/distribution) eller Miniconda på datamskinen sin.
 
-Hvis du ikke har Anaconda installert, følg instruksjonene under overskriften "Praktisk"
+Hvis du ikke har Anaconda installert, følg instruksjonene under overskriften "Praktisk".
 
 ## 🤔 Introduksjon
 
@@ -18,7 +18,7 @@ Radene i datasettet representerer erstatningskrav fra erstatningstager til forsi
 
 Vi har skrevet to [Jupyter](https://jupyter.org/) Notebooks som dere kan bruke som utgangspunkt for å løse oppgavene.
 
-`data_investigation.ipynb` inneholder delvis kode for å utforske og vaske dataene.
+`dataprosessering.ipynb` inneholder delvis kode for å utforske og vaske dataene.
 `maskinlæring.ipynb` inneholder delvis kode for å trene en logistisk regressor, og utforske resultatene som modellen gir.
 
 Den logistiske regresjonen i `maskinlæring.ipynb`-notebooken krever data som er tilstrekkelig preprosessert, altså at kategoriske variabler er encodet som tall. Dere må da kjøre gjennom data_investigation-notebooken for å produsere denne dataen, og sørge for at maskinlæring-notebooken leser den riktige filen.
