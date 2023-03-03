@@ -21,7 +21,7 @@ Vi har skrevet to [Jupyter](https://jupyter.org/) Notebooks som dere kan bruke s
 `dataprosessering.ipynb` inneholder delvis kode for å utforske og vaske dataene.
 `maskinlæring.ipynb` inneholder delvis kode for å trene en logistisk regressor, og utforske resultatene som modellen gir.
 
-Den logistiske regresjonen i `maskinlæring.ipynb`-notebooken krever data som er tilstrekkelig preprosessert, altså at kategoriske variabler er encodet som tall. Dere må da kjøre gjennom data_investigation-notebooken for å produsere denne dataen, og sørge for at maskinlæring-notebooken leser den riktige filen.
+Den logistiske regresjonen i `maskinlæring.ipynb`-notebooken krever data som er tilstrekkelig preprosessert, altså at kategoriske variabler er encodet som tall. Dere må da kjøre gjennom dataprosessering-notebooken for å produsere denne dataen, og sørge for at maskinlæring-notebooken leser den riktige filen.
 
 ## 🛠️ Praktisk 
 
